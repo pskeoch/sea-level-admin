@@ -2,10 +2,10 @@
 
 error_reporting(E_ALL ^E_NOTICE);
 
-$db = "replic_sl";
-$dbusr = "replic_sldb";
-$dbpwd = "tdm5880z";
-$dbhost = "localhost";
+$db = "<dbname>";
+$dbusr = "<dbuser>";
+$dbpwd = "<dbusrpassword>";
+$dbhost = "<dbhost>";
 
 $mysqli = new mysqli($dbhost, $dbusr, $dbpwd, $db);
 	

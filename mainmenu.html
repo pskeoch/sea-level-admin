@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Sea level admin</title>
+<link rel="stylesheet" href="slcss.css">
+
+<script src="dbasefuncs.js" language="javascript" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="menuarea">
+
+	<div id="titlearea"">
+		<p class="titleborder">Sea Level<br>Histories</p>
+		<p>Admin menu</p>
+	</div>
+
+	<div id="menulist">
+		<p class="mainmenuitem"><a href="javascript:display_adddset()">Add tide gauge dataset <b>>></b></a></p>
+		<p class="mainmenuitem"><a href="javascript:display_datasetstable()">Tide gauge dataset updates <b>>></b></a></p>
+		<p class="mainmenuitem"><a href="javascript:deletedataset_start(9)">Delete psmsl from database</a></p>
+
+	</div>
+
+</div>
+
+<div id="worldmaparea">
+</div>
+
+<div id="infoarea">
+</div>
+
+<div id="adminmenuarea">
+</div>
+
+<div id="adddsetarea">
+	<div id="adddsetformarea">
+		<form name="adddsetform" id="adddsetform" action="adddset.php" method="POST">
+			<label for="dsetname">Dataset name: </label>
+			<input type="text" name="dsetname" id="dsetname" size="20"><br><br>
+			<label for="dsetdloadtype">Dataset download type: </label>
+			<input type="text" name="dsetdloadtype" id="dsetdloadtype" size="8"><br><br>	
+			<label for="dsetdloadloc">Dataset download location: </label>
+			<input type="text" name="dsetdloadloc" id="dsetdloadloc" size="32"><br><br>
+			<label for="dsettimeres">Dataset time resolution: </label>
+			<select name="dsettimeres" id="dsettimeres" value="monthly">
+				<option name="monthly" value="monthly">Monthly</option>
+				<option name="annual" value="annual">Annual</option>
+			</select><br><br>
+			<input type="submit" name="submitdset" value="Submit dataset">
+		</form>
+	</div>
+</div>
+
+<div id="dsetdloadopts">
+	
+</div>
+
+</body>
+
+</html>

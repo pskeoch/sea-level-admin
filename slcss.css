@@ -1,0 +1,182 @@
+html,
+body {
+	font-size: 22pt;
+	background-color: #243c76;
+	font-family: Calibri, Arial;
+	height: 100%;
+	margin: 0;
+}
+
+@keyframes slidedsetform {
+	from {right:1000px;}
+	to {right:220px;}
+}
+@keyframes slidedsetdloads {
+	from {right:1000px;}
+	to {right:220px;}
+}
+@keyframes slideformmarker {
+	from {width:20px;}
+	to {width:400px;}
+}
+
+#menuarea {
+	position: relative;
+	background-image: url('mainmenu-circs.svg');
+	background-position: -170px -170px;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 50%;
+	margin: 0px 0px 0px 0px;
+	z-index: 100;
+}
+
+#worldmaparea {
+	position: absolute;
+	top: 60px;
+	right: 60px;
+	background-image: url('worldmap.svg');
+	background-repeat: no-repeat;
+	height: 50%;
+	width: 40%;
+	z-index: 1;
+}
+
+#infoarea {
+	position: absolute;
+	bottom: 60px;
+	right: 80px;
+	width: 40%;
+	height: 200px;
+	border-style: dashed;
+	border-color: #94b5c7;
+	border-width: 2px;
+}
+
+#menulist {
+	position: relative;
+	top: 0px;
+	margin: 0px 0px 0px 50px;
+	width: 50%;
+}
+
+.mainmenuitem {
+	color: #032e3f;
+	font-size: 20px;
+	margin: 10px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+
+
+#titlearea p {
+	display:inline-block;
+	position:relative;
+	margin: 20px 10px 28px 28px;
+	padding: 0px 16px 0px 0px;
+	color: #032e3f;
+}
+.titleborder {
+	border-right: 1px solid #032e3f;
+}
+
+.mainmenuitem a {
+	text-decoration: none;
+}
+.mainmenuitem a:link {
+	color: #032e3f;
+}
+.mainmenuitem a:visited {
+	color: #032e3f;
+}
+.mainmenuitem:hover {
+	background-color: #7495a7;
+}
+.mainmenuitem {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #032e3f;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #032e3f;
+}
+
+#adddsetarea {
+	display: none;
+	position: absolute;
+	top: 40px;
+	right: 220px;
+	height: 50%;
+	width: 80%;
+	background-color: rgba(30,30,30,0.8);
+	border-radius: 40px;
+	z-index: 2;
+	animation-name: slidedsetform;
+	animation-duration: 1.2s;
+}
+
+#adddsetformarea {
+	position: relative;
+	margin: 20px 50px 0px 0px;
+	text-align: right;
+	font-size: 18px;
+	color: #94b5c7;
+}
+#adddsetformarea input {
+	border-radius: 10px;
+	font-size: 16px;
+}
+#formmarker {
+	display: none;
+	width: 400px;
+	height: 26px;
+	position: absolute;
+	left: 200px;
+	top: 130px;
+	background-image: linear-gradient(to right, rgba(148,181,199,1.0), rgba(30,30,30,0.8));
+	animation-name: slideformmarker;
+	animation-duration: 1.2s;
+	z-index: 200;
+}
+
+#dsetdloadopts {
+	display: none;
+	position: absolute;
+	top: 70px;
+	right: 220px;
+	height: 50%;
+	width: 80%;
+	background-color: rgba(50,50,50,0.8);
+	border-radius: 40px;
+	z-index: 3;
+	animation-name: slidedsetdloads;
+	animation-duration: 1.2s;
+	text-align: right;
+}
+
+#dsetdloadopts table {
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+	right: 30px;
+	top: 40px;
+	font-size: 16px;
+	float: right;
+}
+#dsetdloadopts td {
+	border-style: solid;
+	border-width: 1px;
+}
+
+#dbaseloadbar {
+	position: relative;
+	float: right;
+	right: 30px;
+	top: 80px;
+	width: 500px;
+	height: 60px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff;
+	background-color: #94b5c7;
+	background-position: 10px 10px;
+}
